@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
@@ -56,7 +58,7 @@ export default function Home() {
   // Récupération des avis Google
   useEffect(() => {
     fetchGoogleReviews();
-  }, []);
+  }, [sectionRefs]); 
 
   const fetchGoogleReviews = async () => {
     setIsLoading(true);
@@ -621,7 +623,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#3A5B63] mb-3">Bilan naturopathique</h3>
                 <p className="text-gray-600 mb-4">
-                  Une évaluation complète de votre état de santé pour établir un programme personnalisé visant à renforcer vos capacités d'auto-guérison et votre vitalité.
+                  Une évaluation complète de votre état de santé pour établir un programme personnalisé visant à renforcer vos capacités d{"'"}auto-guérison et votre vitalité.
                 </p>
                 <div className="mt-6">
                   <button
