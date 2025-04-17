@@ -140,45 +140,6 @@ export default function Home() {
     }
   }
 
-  // Composant de carte de témoignage
-  const TestimonialCard = ({ name, text, rating, date }) => {
-    return (
-      <div className="min-w-full px-4">
-        <div className="bg-white p-8 rounded-lg shadow-md">
-          {/* Remplacez le positionnement absolu par une flexbox normale */}
-          <div className="flex items-center mb-4">
-            <div className="h-10 w-10 bg-[#537E88]/20 rounded-full flex items-center justify-center mr-4">
-              <span className="text-[#3A5B63] font-bold">{name.charAt(0)}</span>
-            </div>
-            <div className="flex-1">
-              <div className="flex justify-between items-start">
-                <div>
-                  <h4 className="font-bold text-[#3A5B63]">{name}</h4>
-                  <div className="flex">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg 
-                        key={star} 
-                        className={`h-5 w-5 ${star <= rating ? "text-yellow-500" : "text-gray-300"}`} 
-                        viewBox="0 0 20 20" 
-                        fill="currentColor"
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
-                  </div>
-                </div>
-                <div className="text-gray-400">{date}</div>
-              </div>
-              <p className="text-gray-600 italic mt-4">
-                "{text}"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <main className="relative">
       <Head>
@@ -510,7 +471,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-[#3A5B63] mb-2">Bilan personnalisé</h3>
-              <p className="text-gray-600">Évaluation complète de votre état de santé et établissement d'un plan d'action adapté.</p>
+              <p className="text-gray-600">Évaluation complète de votre état de santé et établissement d{"'"}un plan d{"'"}action adapté.</p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -579,7 +540,7 @@ export default function Home() {
                 </div>
                 <div className="bg-[#F8F5F0] p-5 rounded-lg">
                   <h4 className="text-[#3A5B63] font-semibold text-lg mb-2">Expérience</h4>
-                  <p className="text-gray-600">Plus de 10 ans dans l'accompagnement bien-être.</p>
+                  <p className="text-gray-600">Plus de 10 ans dans l{"'"}accompagnement bien-être.</p>
                 </div>
                 <div className="bg-[#F8F5F0] p-5 rounded-lg">
                   <h4 className="text-[#3A5B63] font-semibold text-lg mb-2">Approche</h4>
@@ -602,10 +563,10 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#3A5B63] mb-6">À propos de moi</h2>
               <div className="h-1 w-20 bg-[#537E88] mb-6"></div>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Passionnée par les approches naturelles de la santé, j'ai consacré ma carrière à la naturopathie et à la micronutrition. Mon parcours m'a amenée à me spécialiser dans l'accompagnement personnalisé pour aider les personnes à retrouver leur vitalité et leur équilibre.
+                Passionnée par les approches naturelles de la santé, j{"'"}ai consacré ma carrière à la naturopathie et à la micronutrition. Mon parcours m{"'"}a amenée à me spécialiser dans l{"'"}accompagnement personnalisé pour aider les personnes à retrouver leur vitalité et leur équilibre.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Ma formation en naturopathie, complétée par une expertise en micronutrition fonctionnelle, me permet d'avoir une vision globale de la santé. Je considère chaque personne comme unique, avec ses propres besoins et défis.
+                Ma formation en naturopathie, complétée par une expertise en micronutrition fonctionnelle, me permet d{"'"}avoir une vision globale de la santé. Je considère chaque personne comme unique, avec ses propres besoins et défis.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
                 Mon approche allie les connaissances scientifiques modernes aux sagesses traditionnelles pour vous offrir un accompagnement complet et adapté à votre situation.
@@ -693,7 +654,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#3A5B63] mb-3">Suivi en micronutrition</h3>
                 <p className="text-gray-600 mb-4">
-                  Analyse des carences et déséquilibres micronutritionnels pour optimiser votre santé cellulaire et prévenir les pathologies liées à l'alimentation moderne.
+                  Analyse des carences et déséquilibres micronutritionnels pour optimiser votre santé cellulaire et prévenir les pathologies liées à l{"'"}alimentation moderne.
                 </p>
                 <div className="mt-6">
                   <button
@@ -825,7 +786,7 @@ export default function Home() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-[#3A5B63] mb-3">Accompagnement saisonnier</h3>
                 <p className="text-gray-600 mb-4">
-                  Préparation et soutien de l'organisme lors des changements de saison, avec conseils adaptés pour maintenir votre équilibre tout au long de l'année.
+                  Préparation et soutien de l{"'"}organisme lors des changements de saison, avec conseils adaptés pour maintenir votre équilibre tout au long de l{"'"}année.
                 </p>
                 <div className="mt-6">
                   <button
@@ -890,7 +851,7 @@ export default function Home() {
                     <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
-                    <span className="text-gray-600">Programme d'hygiène de vie personnalisé</span>
+                    <span className="text-gray-600">Programme d{"'"}hygiène de vie personnalisé</span>
                   </li>
                   <li className="flex items-start">
                     <svg className="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1043,7 +1004,7 @@ export default function Home() {
       <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#3A5B63]">Ce que mes clients disent</h2>
       <div className="h-1 w-20 bg-[#537E88] mx-auto my-6"></div>
       <p className="text-gray-600">
-        Découvrez les témoignages de personnes que j'ai pu accompagner dans leur parcours vers une meilleure santé.
+        Découvrez les témoignages de personnes que j{"'"}ai pu accompagner dans leur parcours vers une meilleure santé.
       </p>
     </motion.div>
     
@@ -1086,7 +1047,7 @@ export default function Home() {
                       <div className="text-gray-400">{review.date}</div>
                     </div>
                     <p className="text-gray-600 italic line-clamp-none">
-                      "{review.text}"
+                      {'"'}{review.text}{'"'}
                     </p>
                   </div>
                 </div>
@@ -1318,7 +1279,7 @@ export default function Home() {
                       className="h-5 w-5 text-[#537E88] focus:ring-[#537E88] border-gray-300 rounded mt-1"
                     />
                     <label htmlFor="privacy" className="ml-2 block text-sm text-gray-600">
-                      J'accepte que mes données soient traitées dans le cadre de ma demande de contact
+                      J{"'"}accepte que mes données soient traitées dans le cadre de ma demande de contact
                     </label>
                   </div>
                   
@@ -1548,50 +1509,6 @@ export default function Home() {
   );
 }
 
-// Fonction pour charger les avis Google
-function fetchGoogleReviews() {
-  // Dans un environnement de production, ceci devrait être fait via une API ou un backend
-  // Pour cet exemple, nous simulons les données
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      // Données simulées formatées comme les avis Google réels
-      const mockGoogleReviews = [
-        {
-          name: "Vincent Aubert",
-          rating: 5,
-          date: "Il y a 3 mois",
-          text: "J'ai consulté Fadia à plusieurs reprises pour des soucis d'inflammations digestives. Son approche est très professionnelle, tout en restant très humaine. La première consultation est très complète, ensuite c'est un vrai partenariat qui s'installe. Fadia a de très bonnes connaissances en micronutrition ce qui permet de proposer un accompagnement holistique. Merci pour tout!"
-        },
-        {
-          name: "Pierre Dupont",
-          rating: 5,
-          date: "Il y a 4 mois",
-          text: "Fadia est extrêmement à l'écoute et bienveillante. Elle a pris le temps de comprendre mes besoins et m'a proposé un programme personnalisé qui a vraiment amélioré ma qualité de vie. L'accompagnement est complet et les conseils très pertinents. Je recommande vivement!"
-        },
-        {
-          name: "Sophie Martin",
-          rating: 5,
-          date: "Il y a 2 mois",
-          text: "Très satisfaite de ma consultation avec Fadia. Elle prend vraiment le temps d'analyser votre situation dans sa globalité et propose des solutions concrètes et facilement applicables au quotidien. Sa connaissance en micronutrition apporte une vraie valeur ajoutée par rapport à d'autres naturopathes que j'ai pu consulter. Je vois déjà des résultats après quelques semaines!"
-        },
-        {
-          name: "Thomas Leroy",
-          rating: 5,
-          date: "Il y a 6 mois",
-          text: "Fadia a une approche vraiment complète et professionnelle. J'avais des problèmes de sommeil et de stress chronique depuis des années, et grâce à son accompagnement, j'ai pu retrouver un équilibre et une meilleure qualité de vie. Les conseils sont personnalisés et adaptés à mon mode de vie, ce qui les rend faciles à suivre."
-        },
-        {
-          name: "Julie Lambert",
-          rating: 4,
-          date: "Il y a 5 mois",
-          text: "Une naturopathe compétente et passionnée par son métier. La consultation était très complète et j'ai apprécié son approche globale qui ne se limite pas qu'à l'alimentation. J'ai retrouvé de l'énergie et mes troubles digestifs se sont nettement améliorés. Je retire une étoile uniquement car certains compléments recommandés étaient un peu chers, mais l'investissement en valait la peine."
-        }
-      ];
-      
-      resolve(mockGoogleReviews);
-    }, 1500); // Simulation d'un délai de chargement
-  });
-}
 
 // Fonction de gestion des clics pour le rendez-vous
 function handleRdvClick(e) {
